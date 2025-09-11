@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 
 st.set_page_config(page_title="Random Review Picker", page_icon="⭐", layout="centered")
 
-BUSINESS_NAME = "VIP Digital Hub - Web Design Company Bhopal"
+BUSINESS_NAME = "Deep Touch Relax Spa indore"
 
 # ================== CSS ==================
 st.markdown("""
@@ -87,7 +87,7 @@ h3 {
 st.markdown(f"# ⭐ Welcome to {BUSINESS_NAME} Review Page")
 
 # ================== Google Review URL ==================
-GOOGLE_REVIEW_URL = "https://g.page/r/CVLwfId3SaCDEAE/review"
+GOOGLE_REVIEW_URL = "https://g.page/r/CWbOSAo4RwIbEAE/review"
 
 # ================== Load Reviews ==================
 try:
@@ -130,5 +130,6 @@ if reviews:
             components.html(html, height=200)
 else:
     st.warning("No reviews found in reviews.txt! Please add some reviews.")
+
 
 
